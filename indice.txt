@@ -5,4 +5,4 @@
 5) EnlacesController -> enviar parámetros GET a través de la ui medianete enlaces para para capturar su  valor desde un @RequtesParam y después desde un @PathVariable
 6) ValidacionesController -> validar un formulario a paritr de un modelo con las libreria de Validations
 
-Ejercicios
+Ejercicios del 1 al 14

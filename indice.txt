@@ -1,3 +1,4 @@
+0) Presentaciones y kahoot
 1) HomeController ->  Enviar difrentes URLs para que llamen a diferentes vistas (path a nivel de método y path a nivel de clase)
 2) EnvioDatosAVistaController -> Enviar información desde un método del controlador a una vista a  través de Model. Usar después una clase modelo para enviar los datos
 3) ObtenerParametrosGetController -> Obtener  parámetros GET a revés de @ReuestParam y @PathVariable

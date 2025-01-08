@@ -1,0 +1,8 @@
+1) HomeController ->  Enviar difrentes URLs para que llamen a diferentes vistas (path a nivel de método y path a nivel de clase)
+2) EnvioDatosAVistaController -> Enviar información desde un método del controlador a una vista a  través de Model. Usar después una clase modelo para enviar los datos
+3) ObtenerParametrosGetController -> Obtener  parámetros GET a revés de @ReuestParam y @PathVariable
+4) FormularioController -> Enviar parámetros GET y POST a través de un formaulario
+5) EnlacesController -> enviar parámetros GET a través de la ui medianete enlaces para para capturar su  valor desde un @RequtesParam y después desde un @PathVariable
+6) ValidacionesController -> validar un formulario a paritr de un modelo con las libreria de Validations
+
+Ejercicios

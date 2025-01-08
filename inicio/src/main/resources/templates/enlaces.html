@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Enlaces</h2>
+
+
+    <!-- query string -->
+    <a th:href="@{/enlaces/obtener-datos?id=1}">Juan</a>
+    <a th:href="@{/enlaces/obtener-datos?id=2}">Pepe</a>
+    <a th:href="@{/enlaces/obtener-datos?id=3}">Lucas</a>
+
+    <!-- path variable -->
+    <a th:href="@{/enlaces/path-variable/1}">Producto 1</a>
+    <a th:href="@{/enlaces/path-variable/2}">Producto 2</a>
+  
+
+    
+</body>
+</html>

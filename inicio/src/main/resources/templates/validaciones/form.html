@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FORM</h1>
+
+    <form th:action="@{/validaciones/post}"  th:object="${persona}" method="post">
+        <input type="text" th:field="*{nombre}" placeholder="Usuario" autocomplete="off" /><br>
+        <p th:if="${#fields.hasErrors('nombre')}" th:errors="*{nombre}"></p>
+ 
+        <input type="text" th:field="*{email}" placeholder="Email" autocomplete="off" /><br>
+        <p th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></p>
+       
+
+        <button type="submit">Enviar</button>
+
+
+    </form>
+</body>
+</html>

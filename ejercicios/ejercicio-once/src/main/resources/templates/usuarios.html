@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+
+
+      <ul th:each="usuario : ${usuarios}">
+        <li th:text="${usuario.nombre}+' - '+ ${usuario.email}"></li>
+      </ul>
+
+    <h2 th:if="${notFound}" th:text="${notFound}"></h2>
+
+</body>
+</html>

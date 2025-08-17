@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <h1>Log In</h1>
+
+    <form th:action="@{/login}" method="post">
+
+        <input type="text" name="username" placeholder="Usuario" autocomplete="off"><br>
+        <input type="text" name="password" placeholder="Contraseña" autocomplete="off"><br>
+
+        <button type="submit">Log In</button>
+
+    </form>
+
+    <br />
+
+    <p th:if="${param.error}">Usuario o contraseña incorrecto</p>
+    <p th:if="${param.registered}">Usuario registrado correctamente , ya puedes iniciar sesión</p>
+
+    <a th:href="@{/register}">Registrarse</a>
+
+</body>
+</html>

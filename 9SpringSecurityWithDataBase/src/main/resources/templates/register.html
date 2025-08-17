@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <form th:action="@{/register}" th:object="${registerDto}" method="post">
+
+        <input type="text" th:field="*{username}" placeholder="Usuario" autocomplete="off"><br>
+        <input type="text" th:field="*{password}" placeholder="Contraseña" autocomplete="off"><br>
+
+        <label>Rol</label>
+
+        <select th:field="*{role}">
+            <option value="">Seleccionar rol</option>
+            <option value="USER">Usuario</option>
+            <option value="ADMIN">Admin</option>
+            <option value="GESTOR">Gestor</option>
+        </select>
+
+        <br />
+
+        <button type="submit">Registrar</button>
+
+
+    </form>
+
+</body>
+</html>
